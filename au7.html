@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 7: Monitoreo de Servidores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1>Tema 7: Monitoreo de Servidores</h1>
+        </header>
+
+        <main class="content">
+            <section class="topic-details">
+                <button class="back-button" onclick="history.back()">← Regresar</button>
+
+                <article>
+                    <h2>Introducción al Monitoreo de Servidores</h2>
+                    <p>
+                        El monitoreo de servidores es una práctica fundamental para garantizar el buen funcionamiento de los servicios y aplicaciones que operan en una infraestructura de TI. A través del monitoreo, los administradores pueden identificar problemas antes de que se conviertan en fallos graves, permitiendo una intervención temprana para mantener la estabilidad y la disponibilidad del sistema.
+                    </p>
+
+                    <h3>¿Por qué es Importante el Monitoreo de Servidores?</h3>
+                    <p>
+                        El monitoreo proactivo de servidores permite detectar y corregir problemas como caídas del sistema, cuellos de botella en el rendimiento, ataques de seguridad y mal uso de recursos. Si bien es fundamental para mantener la disponibilidad, también es útil para:
+                    </p>
+                    <ul>
+                        <li><strong>Mejorar el rendimiento:</strong> Detectar los recursos que no se están utilizando de manera eficiente o aquellos que se están agotando.</li>
+                        <li><strong>Prevenir fallos:</strong> Monitorear la salud del servidor para evitar caídas inesperadas y asegurarse de que se cumplan los SLA (Acuerdos de Nivel de Servicio).</li>
+                        <li><strong>Optimizar el uso de recursos:</strong> Asegurar que los recursos del servidor, como la CPU, memoria y almacenamiento, se utilicen de manera eficiente.</li>
+                        <li><strong>Seguridad:</strong> Detectar posibles ataques o intrusiones mediante la supervisión de actividades inusuales o patrones anómalos en el servidor.</li>
+                    </ul>
+
+                    <h3>Tipos de Monitoreo de Servidores</h3>
+                    <p>
+                        Existen diferentes tipos de monitoreo de servidores que se pueden utilizar para garantizar su correcto funcionamiento. A continuación, se describen los más comunes:
+                    </p>
+                    <ul>
+                        <li><strong>Monitoreo de rendimiento:</strong> Mide el uso de la CPU, memoria, almacenamiento y red, con el objetivo de identificar cuellos de botella y posibles fallos de hardware.</li>
+                        <li><strong>Monitoreo de disponibilidad:</strong> Detecta si el servidor está funcionando correctamente, si está caído o fuera de servicio, y alerta sobre la necesidad de intervención.</li>
+                        <li><strong>Monitoreo de seguridad:</strong> Analiza patrones de acceso, identifica actividades sospechosas y ayuda a prevenir intrusiones no autorizadas.</li>
+                        <li><strong>Monitoreo de aplicaciones:</strong> Monitorea las aplicaciones que corren en el servidor, asegurando que se mantengan operativas y se ajusten a los parámetros de rendimiento establecidos.</li>
+                    </ul>
+
+                    <h3>Herramientas de Monitoreo de Servidores</h3>
+                    <p>
+                        Existen diversas herramientas para realizar el monitoreo de servidores de forma eficiente. Algunas de las más populares son:
+                    </p>
+                    <ul>
+                        <li><strong>Nagios:</strong> Una de las herramientas de monitoreo más conocidas y utilizadas, que permite monitorear servidores, aplicaciones y dispositivos de red. Su flexibilidad permite personalizar alertas y realizar un seguimiento exhaustivo.</li>
+                        <li><strong>Zabbix:</strong> Una herramienta de monitoreo empresarial de código abierto que permite monitorear la disponibilidad y el rendimiento de servidores, redes y aplicaciones.</li>
+                        <li><strong>Prometheus:</strong> Un sistema de monitoreo y alerta diseñado para la monitoreo de aplicaciones en tiempo real, especialmente en entornos de contenedores y microservicios.</li>
+                        <li><strong>SolarWinds:</strong> Una suite de monitoreo empresarial que ofrece diversas herramientas para la supervisión de servidores, aplicaciones, bases de datos y redes.</li>
+                        <li><strong>Datadog:</strong> Una plataforma basada en la nube para monitorear el rendimiento de aplicaciones, servidores y redes en tiempo real, con visualización avanzada de métricas y alertas.</li>
+                    </ul>
+
+                    <h3>Mejores Prácticas para el Monitoreo de Servidores</h3>
+                    <p>
+                        A continuación, se presentan algunas mejores prácticas que todo administrador de servidores debe seguir para asegurar un monitoreo efectivo:
+                    </p>
+                    <ol>
+                        <li><strong>Configurar alertas adecuadas:</strong> Es importante configurar alertas para que el personal encargado reciba notificaciones cuando se superen ciertos umbrales de uso de recursos o se detecten posibles fallos.</li>
+                        <li><strong>Monitorear el rendimiento de la red:</strong> El monitoreo de la red es crucial para detectar problemas de latencia, congestión o pérdida de paquetes que puedan afectar el rendimiento del servidor.</li>
+                        <li><strong>Implementar monitoreo a nivel de aplicación:</strong> Asegúrate de que no solo el servidor, sino también las aplicaciones que corren en él, se monitoreen para detectar cualquier anomalía o degradación en su rendimiento.</li>
+                        <li><strong>Realizar análisis histórico:</strong> Guardar registros históricos del rendimiento del servidor ayuda a identificar tendencias y anticipar posibles problemas antes de que ocurran.</li>
+                        <li><strong>Automatizar la recolección de datos:</strong> Automatiza el proceso de recolección de datos y asegúrate de que todos los aspectos del servidor sean monitoreados de manera continua.</li>
+                    </ol>
+
+                    <h3>Cómo Interpretar las Alertas de Monitoreo</h3>
+                    <p>
+                        Una vez que las alertas se activan, es crucial saber cómo interpretarlas correctamente para tomar las acciones adecuadas. Las alertas pueden estar relacionadas con diferentes métricas:
+                    </p>
+                    <ul>
+                        <li><strong>Uso elevado de la CPU:</strong> Indica que el servidor está sobrecargado y necesita recursos adicionales o una optimización de las aplicaciones.</li>
+                        <li><strong>Memoria insuficiente:</strong> Si la memoria del servidor se está agotando, es posible que sea necesario aumentar la memoria RAM o cerrar aplicaciones innecesarias.</li>
+                        <li><strong>Espacio en disco bajo:</strong> Un espacio de almacenamiento insuficiente puede causar caídas del sistema. Es importante monitorizar el uso del disco y mantener suficiente espacio libre.</li>
+                        <li><strong>Problemas de red:</strong> Latencia o pérdidas de paquetes en la red pueden afectar la conectividad y el rendimiento de los servicios. Es necesario realizar diagnósticos para identificar la causa.</li>
+                    </ul>
+                </article>
+
+                <section class="media">
+                    <div class="image-container">
+                        <h3>Diagrama del Proceso de Monitoreo</h3>
+                        <!-- Usa la ruta de tu propia imagen en lugar de la de placeholder -->
+                        <img src="t7.png" alt="Diagrama de monitoreo de servidor" width="400" height="400">
+                    </div>
+
+                    <div class="video-container">
+                        <h3>Video relacionado:</h3>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/UnMZgxcnr0Q?si=PQDHw8MbZQaO_-0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>© Gonzales Tabera Evelyn - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

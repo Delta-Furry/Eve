@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5: Seguridad en Servidores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1>Tema 5: Seguridad en Servidores</h1>
+        </header>
+
+        <main class="content">
+            <section class="topic-details">
+                <button class="back-button" onclick="history.back()">← Regresar</button>
+
+                <article>
+                    <h2>Introducción a la Seguridad en Servidores</h2>
+                    <p>
+                        La seguridad en servidores es un aspecto crucial para cualquier organización que maneje datos o servicios críticos en línea. Los servidores son puntos vulnerables a varios tipos de ataques cibernéticos, y mantenerlos seguros es fundamental para evitar accesos no autorizados, pérdida de datos y otros riesgos asociados.
+                    </p>
+
+                    <h3>Conceptos Clave en la Seguridad de Servidores</h3>
+                    <p>
+                        Existen diversas técnicas y buenas prácticas que los administradores de sistemas deben aplicar para asegurar la infraestructura de servidores. Entre los conceptos clave en la seguridad de servidores, se incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Firewall:</strong> Es una barrera de seguridad que filtra el tráfico entrante y saliente para evitar accesos no deseados.</li>
+                        <li><strong>Autenticación:</strong> El proceso de verificar la identidad de un usuario antes de otorgar acceso al servidor.</li>
+                        <li><strong>Encriptación:</strong> El uso de técnicas criptográficas para proteger los datos tanto en tránsito como en reposo.</li>
+                        <li><strong>Monitoreo de seguridad:</strong> La supervisión constante de los sistemas para detectar posibles intrusos o vulnerabilidades.</li>
+                    </ul>
+
+                    <h3>Buenas Prácticas para la Seguridad de Servidores</h3>
+                    <p>
+                        Existen varias prácticas recomendadas que todo administrador debe seguir para mejorar la seguridad de los servidores:
+                    </p>
+                    <ol>
+                        <li><strong>Configurar un Firewall Adecuado:</strong> Asegúrate de que el firewall esté correctamente configurado para bloquear conexiones no deseadas y permitir solo el tráfico legítimo.</li>
+                        <li><strong>Deshabilitar Servicios Innecesarios:</strong> Muchos servidores tienen servicios activados por defecto que no son necesarios. Desactivar estos servicios reduce la superficie de ataque.</li>
+                        <li><strong>Actualizar Software y Parches de Seguridad:</strong> Mantén el sistema operativo y las aplicaciones del servidor siempre actualizados para prevenir que los atacantes exploten vulnerabilidades conocidas.</li>
+                        <li><strong>Uso de Contraseñas Fuertes:</strong> Utiliza contraseñas complejas y únicas para todas las cuentas del servidor. También puedes implementar autenticación de dos factores para mayor seguridad.</li>
+                        <li><strong>Habilitar Autenticación SSH Segura:</strong> Configura el acceso SSH solo con claves públicas, deshabilita el acceso por contraseña y restringe el acceso a direcciones IP específicas.</li>
+                        <li><strong>Realizar Copias de Seguridad Regulares:</strong> Asegúrate de que el servidor realice copias de seguridad periódicas y almacénelas en un lugar seguro para garantizar la recuperación en caso de desastre.</li>
+                    </ol>
+
+                    <h3>Tipos de Amenazas y Cómo Mitigarlas</h3>
+                    <p>
+                        Algunas de las principales amenazas que enfrentan los servidores incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Ataques DDoS:</strong> Los ataques de denegación de servicio distribuido pueden sobrecargar un servidor con tráfico falso. Para mitigar esto, se pueden utilizar servicios de protección como Cloudflare o soluciones anti-DDoS.</li>
+                        <li><strong>Inyecciones SQL:</strong> Estos ataques permiten que un atacante ejecute consultas maliciosas en una base de datos. Para prevenirlo, asegúrate de validar y sanear todas las entradas de los usuarios.</li>
+                        <li><strong>Phishing:</strong> A través del phishing, los atacantes intentan obtener credenciales de acceso. La implementación de autenticación multifactor (MFA) puede ayudar a mitigar estos ataques.</li>
+                        <li><strong>Malware:</strong> El malware puede infiltrarse en un servidor y comprometerlo. Instalar y mantener actualizado un software antivirus es una medida de mitigación efectiva.</li>
+                    </ul>
+
+                    <h3>Herramientas y Recursos de Seguridad para Servidores</h3>
+                    <p>
+                        Existen diversas herramientas y recursos que los administradores de servidores pueden utilizar para fortalecer la seguridad de sus sistemas. Algunos ejemplos incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Fail2ban:</strong> Una herramienta que protege contra intentos de acceso no autorizado mediante la detección de patrones de ataques y el bloqueo de IPs maliciosas.</li>
+                        <li><strong>ClamAV:</strong> Un software antivirus de código abierto que puede ser instalado en servidores Linux para detectar y eliminar malware.</li>
+                        <li><strong>SELinux:</strong> Una herramienta de seguridad que impone políticas de control de acceso y refuerza la seguridad en sistemas Linux.</li>
+                        <li><strong>OpenVAS:</strong> Un escáner de vulnerabilidades que permite identificar posibles fallas de seguridad en los servidores.</li>
+                    </ul>
+                </article>
+
+                <section class="media">
+                    <div class="image-container">
+                        <h3>Diagrama de Seguridad en Servidores</h3>
+                        <!-- Usa la ruta de tu propia imagen en lugar de la de placeholder -->
+                        <img src="t5.png" alt="Diagrama de Seguridad" width="400" height="400">
+                    </div>
+
+                    <div class="video-container">
+                        <h3>Video relacionado:</h3>
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/SPx_VI9zL-Y?si=tWmmREDL2U7FijRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>© Gonzales Tabera Evelyn - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

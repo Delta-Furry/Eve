@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3: Conexión de Base de Datos en la Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1>Tema 3: Conexión de Base de Datos en la Web</h1>
+        </header>
+
+        <main class="content">
+            <section class="topic-details">
+                <button class="back-button" onclick="history.back()">← Regresar</button>
+
+                <article>
+                    <h2>¿Qué es una Conexión de Base de Datos en la Web?</h2>
+                    <p>
+                        Una conexión de base de datos en la web es el enlace que permite a las aplicaciones web acceder a datos almacenados en una base de datos para mostrar información dinámica a los usuarios. Esto es fundamental en el desarrollo de sitios web y aplicaciones donde se requiere manejar grandes cantidades de datos, como en sistemas de gestión, comercio electrónico, redes sociales, entre otros.
+                    </p>
+                    <p>
+                        En la mayoría de los casos, las aplicaciones web utilizan bases de datos relacionales, como **MySQL**, **PostgreSQL** o **SQL Server**, para almacenar y organizar datos. Las conexiones a estas bases de datos se realizan a través de un **servidor de base de datos**, que permite a la aplicación web ejecutar consultas SQL, actualizar registros, eliminar datos y mucho más.
+                    </p>
+
+                    <h3>Componentes de una Conexión de Base de Datos</h3>
+                    <ul>
+                        <li><strong>Servidor de Base de Datos:</strong> Es la ubicación donde la base de datos está almacenada. Normalmente, es un servidor físico o en la nube que se conecta a través de un puerto específico.</li>
+                        <li><strong>Driver de Conexión:</strong> Es el intermediario entre la aplicación web y la base de datos. Proporciona las funciones necesarias para establecer y gestionar la conexión.</li>
+                        <li><strong>Cadena de Conexión:</strong> Es una cadena de texto que incluye la información necesaria para conectarse a la base de datos, como la dirección del servidor, el nombre de la base de datos, el nombre de usuario y la contraseña.</li>
+                    </ul>
+
+                    <h3>Pasos para Conectar una Base de Datos a una Aplicación Web</h3>
+                    <ol>
+                        <li><strong>Configuración del servidor:</strong> Asegúrate de que el servidor de base de datos esté corriendo y accesible desde el servidor donde está alojada la aplicación web.</li>
+                        <li><strong>Definir la cadena de conexión:</strong> Dependiendo del lenguaje de programación y el sistema de base de datos, necesitarás configurar la cadena de conexión con los parámetros correctos, como el nombre de usuario, la contraseña y el nombre de la base de datos.</li>
+                        <li><strong>Uso del driver:</strong> A través de un driver adecuado (por ejemplo, `mysqli` para PHP, `pdo_mysql` o `MySQL Connector` en Python), la aplicación establece la conexión y puede comenzar a interactuar con la base de datos.</li>
+                        <li><strong>Ejecución de consultas SQL:</strong> Una vez que la conexión esté establecida, puedes realizar consultas SQL para recuperar, insertar, actualizar o eliminar datos de la base de datos.</li>
+                    </ol>
+
+                    <h3>Ejemplo de Conexión MySQL en PHP</h3>
+                    <pre><code>
+&lt;?php
+$servername = "localhost";
+$username = "usuario";
+$password = "contraseña";
+$dbname = "mi_base_de_datos";
+
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("La conexión falló: " . $conn->connect_error);
+}
+echo "Conexión exitosa";
+$conn->close();
+?>
+                    </code></pre>
+
+                    <p>
+                        En este ejemplo, se establece una conexión a una base de datos MySQL utilizando la extensión `mysqli` en PHP. Si la conexión es exitosa, el mensaje "Conexión exitosa" se imprimirá en la pantalla. En caso de que ocurra un error, se mostrará un mensaje detallando la falla.
+                    </p>
+                </article>
+
+                <section class="media">
+                    <div class="image-container">
+                        <h3>Diagrama de Conexión</h3>
+                        <!-- Usa la ruta de tu propia imagen en lugar de la de placeholder -->
+                        <img src="t3.png" alt="Diagrama de Conexión" width="400" height="400">
+                    </div>
+
+                    <div class="video-container">
+                       
+                        <iframe width="560" height="315" 
+                            src="" 
+                            title="Espacio para video"
+                            frameborder="0" allowfullscreen>
+                        </iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/W5tXEH7oNcU?si=OiOJDaMTULjxalbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>© Gonzales Tabera Evelyn - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

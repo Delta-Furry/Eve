@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 9: Recuperación ante Desastres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1>Tema 9: Recuperación ante Desastres</h1>
+        </header>
+
+        <main class="content">
+            <section class="topic-details">
+                <button class="back-button" onclick="history.back()">← Regresar</button>
+
+                <article>
+                    <h2>¿Qué es la Recuperación ante Desastres?</h2>
+                    <p>
+                        La Recuperación ante Desastres (Disaster Recovery, DR) es un conjunto de políticas, herramientas y procedimientos que permiten restaurar sistemas y servicios críticos de TI tras un desastre. Estos desastres pueden incluir fallos de hardware, ciberataques, desastres naturales o errores humanos. El objetivo de un plan de recuperación ante desastres es minimizar el tiempo de inactividad y la pérdida de datos, asegurando que la organización pueda continuar operando lo más rápido posible tras una interrupción grave.
+                    </p>
+
+                    <h3>Importancia de la Recuperación ante Desastres</h3>
+                    <p>
+                        Un plan de recuperación ante desastres es esencial para garantizar la continuidad del negocio, ya que proporciona las pautas necesarias para restaurar los sistemas críticos y proteger los datos. Sin un plan de DR bien diseñado, una organización puede enfrentar pérdidas financieras, reputacionales y operacionales significativas.
+                    </p>
+                    <ul>
+                        <li><strong>Reducción de riesgos:</strong> Minimiza la probabilidad de interrupciones graves que afecten las operaciones de la empresa.</li>
+                        <li><strong>Protección de los datos:</strong> Asegura que los datos críticos estén protegidos y puedan ser restaurados rápidamente.</li>
+                        <li><strong>Continuidad del negocio:</strong> Permite a la organización seguir operando, incluso después de un desastre importante.</li>
+                    </ul>
+
+                    <h3>Componentes Clave de un Plan de Recuperación ante Desastres</h3>
+                    <p>
+                        Un plan de recuperación ante desastres efectivo debe incluir varios componentes esenciales para garantizar que la recuperación se realice de manera eficiente:
+                    </p>
+                    <ul>
+                        <li><strong>Análisis de impacto en el negocio (BIA):</strong> Identificar las funciones críticas del negocio y los impactos potenciales de un desastre sobre estas funciones.</li>
+                        <li><strong>Objetivos de punto de recuperación (RPO):</strong> Determinar cuánto tiempo puede pasar sin que los datos se pierdan. Este es el tiempo máximo tolerable sin respaldo de datos.</li>
+                        <li><strong>Objetivos de tiempo de recuperación (RTO):</strong> Establecer el tiempo máximo aceptable para restaurar los sistemas y servicios después de un desastre.</li>
+                        <li><strong>Procedimientos de recuperación:</strong> Documentar los pasos exactos que deben seguirse para restaurar la infraestructura y los sistemas afectados.</li>
+                        <li><strong>Pruebas de recuperación:</strong> Realizar simulaciones regulares para asegurar que el plan de DR funcione según lo previsto.</li>
+                    </ul>
+
+                    <h3>Tipos de Estrategias de Recuperación ante Desastres</h3>
+                    <p>
+                        Existen diferentes enfoques para la recuperación ante desastres, y la elección de una estrategia depende de las necesidades de la organización y los recursos disponibles:
+                    </p>
+                    <ul>
+                        <li><strong>Recuperación en el sitio:</strong> La infraestructura de recuperación se encuentra en las instalaciones de la empresa. Este enfoque puede ser más rápido, pero requiere una inversión significativa en recursos.</li>
+                        <li><strong>Recuperación en la nube:</strong> Utilizar servicios en la nube para replicar los sistemas y datos. Esto permite una recuperación rápida, sin la necesidad de infraestructura física adicional.</li>
+                        <li><strong>Recuperación híbrida:</strong> Combina la recuperación en el sitio con la recuperación en la nube, proporcionando una solución flexible y rentable.</li>
+                        <li><strong>Recuperación de desastres como servicio (DRaaS):</strong> Externalizar la recuperación ante desastres mediante un proveedor de servicios especializado que maneja toda la infraestructura y los procesos de recuperación.</li>
+                    </ul>
+
+                    <h3>Pasos para Crear un Plan de Recuperación ante Desastres</h3>
+                    <p>
+                        Crear un plan de recuperación ante desastres sólido implica varias etapas que incluyen la planificación, implementación y prueba continua:
+                    </p>
+                    <ol>
+                        <li><strong>Evaluación de riesgos:</strong> Identificar las amenazas que podrían afectar los sistemas de TI de la empresa, como desastres naturales, ciberataques, o fallos técnicos.</li>
+                        <li><strong>Desarrollo de estrategias de recuperación:</strong> Determinar las mejores soluciones y enfoques para restaurar los servicios en función de la infraestructura y los datos que se manejan.</li>
+                        <li><strong>Documentación detallada:</strong> Crear un plan de acción que describa cada paso que se debe seguir en caso de desastre. Incluir los roles y responsabilidades del personal.</li>
+                        <li><strong>Pruebas periódicas:</strong> Probar el plan regularmente para garantizar que todos los procedimientos funcionen correctamente en una situación real.</li>
+                        <li><strong>Revisión y actualización:</strong> Revisar el plan periódicamente para reflejar cambios en la infraestructura, procesos o servicios.</li>
+                    </ol>
+
+                    <h3>Mejores Prácticas en la Recuperación ante Desastres</h3>
+                    <p>
+                        Aquí algunas mejores prácticas para asegurar una recuperación efectiva ante desastres:
+                    </p>
+                    <ul>
+                        <li><strong>Backup de datos:</strong> Realizar copias de seguridad regulares de los datos críticos, y asegurarse de que estén almacenadas en diferentes ubicaciones (por ejemplo, en la nube y en un sitio físico).</li>
+                        <li><strong>Automatización:</strong> Automatizar los procesos de recuperación siempre que sea posible para reducir los errores humanos y acelerar la restauración.</li>
+                        <li><strong>Formación del personal:</strong> Capacitar al personal en los procedimientos de recuperación ante desastres para que estén preparados para actuar rápidamente en caso de emergencia.</li>
+                        <li><strong>Documentación clara:</strong> Tener un plan documentado y accesible que pueda ser seguido por cualquier miembro del equipo, incluso en situaciones estresantes.</li>
+                        <li><strong>Evaluaciones de impacto:</strong> Evaluar regularmente el impacto de los posibles desastres y ajustar el plan de recuperación en función de los cambios en el entorno de negocio.</li>
+                    </ul>
+
+                    <h3>Desafíos en la Recuperación ante Desastres</h3>
+                    <p>
+                        La implementación de un plan de recuperación ante desastres puede presentar varios desafíos, entre los que se incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Costos elevados:</strong> Las soluciones de recuperación, especialmente aquellas que incluyen infraestructura de respaldo o servicios en la nube, pueden ser caras.</li>
+                        <li><strong>Complejidad técnica:</strong> La integración de diferentes sistemas y la creación de procedimientos que funcionen bien en situaciones reales pueden ser complicadas.</li>
+                        <li><strong>Tiempo de inactividad:</strong> Algunos métodos de recuperación pueden implicar tiempo de inactividad mientras se restauran los sistemas, lo que puede afectar las operaciones comerciales.</li>
+                    </ul>
+                </article>
+
+                <section class="media">
+                    <div class="image-container">
+                        <h3>Esquema de un Plan de Recuperación ante Desastres</h3>
+                        <!-- Usa la ruta de tu propia imagen en lugar de la de placeholder -->
+                        <img src="t9.png" alt="Diagrama de recuperación ante desastres" width="400" height="400">
+                    </div>
+
+                    <div class="video-container">
+                        <h3>Video relacionado:</h3>
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dRhO76OVC1U?si=NRy0aLbSaiFI_55g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>© Gonzales Tabera Evelyn - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

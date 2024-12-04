@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2: Configuración de Base de Datos MySQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1>Tema 2: Configuración de Base de Datos MySQL</h1>
+        </header>
+
+        <main class="content">
+            <section class="topic-details">
+                <button class="back-button" onclick="history.back()">← Regresar</button>
+
+                <article>
+                    <h2>¿Qué es MySQL y por qué es importante configurarlo adecuadamente?</h2>
+                    <p>
+                        MySQL es uno de los sistemas de gestión de bases de datos relacionales (RDBMS) más populares del mundo. Se utiliza para almacenar y gestionar datos de forma eficiente, y su popularidad proviene de su estabilidad, escalabilidad y el hecho de ser de código abierto. Al configurar MySQL correctamente, se asegura que el sistema opere de manera eficiente, segura y con un rendimiento óptimo.
+                    </p>
+                    <h3>Pasos básicos para la configuración de MySQL</h3>
+                    <ol>
+                        <li><strong>Instalación:</strong> La instalación de MySQL varía según el sistema operativo. Los paquetes de MySQL están disponibles para Linux, Windows y macOS. Una vez descargado, el proceso de instalación sigue las pautas estándar para cualquier software.</li>
+                        <li><strong>Configuración inicial:</strong> Tras la instalación, es fundamental configurar las variables principales de MySQL como el <code>root</code> y el directorio de datos, además de definir el puerto por el cual se comunicará el servidor (generalmente el puerto 3306).</li>
+                        <li><strong>Usuarios y permisos:</strong> Crear cuentas de usuario y asignarles privilegios es un paso crucial en la seguridad de MySQL. Se recomienda no usar la cuenta <code>root</code> para tareas cotidianas, sino crear usuarios con los permisos mínimos necesarios.</li>
+                        <li><strong>Optimización de parámetros:</strong> Ajustar las variables de rendimiento como el tamaño de la memoria asignada al buffer, el tamaño máximo de los paquetes y los hilos de conexión, impacta directamente en la eficiencia de MySQL.</li>
+                    </ol>
+
+                    <h3>Importancia de la seguridad en la configuración</h3>
+                    <p>
+                        Una configuración adecuada de seguridad es crítica para proteger los datos almacenados. Esto incluye habilitar conexiones seguras mediante SSL, restringir el acceso a la base de datos solo a las IPs autorizadas y realizar copias de seguridad periódicas para evitar la pérdida de datos en caso de ataques o fallos del sistema.
+                    </p>
+
+                    <h3>Optimización del rendimiento</h3>
+                    <p>
+                        MySQL permite múltiples optimizaciones para mejorar su rendimiento. Algunas de las técnicas más comunes incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Índices:</strong> Crear índices en las columnas más consultadas mejora drásticamente el tiempo de respuesta de las consultas.</li>
+                        <li><strong>Cacheo de consultas:</strong> El caché de consultas almacena los resultados de las consultas ejecutadas para que las posteriores se puedan recuperar más rápidamente sin necesidad de realizar un procesamiento adicional.</li>
+                        <li><strong>Particionamiento de tablas:</strong> Particionar grandes tablas en fragmentos más pequeños mejora el rendimiento al reducir el tiempo de búsqueda y procesamiento de datos.</li>
+                    </ul>
+
+                    <h3>Copias de seguridad y recuperación de datos</h3>
+                    <p>
+                        Configurar un buen sistema de respaldo es esencial. Existen varias herramientas que permiten crear copias de seguridad automáticas de las bases de datos MySQL, como <code>mysqldump</code>. Además, es importante probar regularmente los procesos de restauración para asegurarse de que los respaldos son funcionales y que los datos pueden recuperarse de manera oportuna en caso de desastre.
+                    </p>
+
+                    <h3>Otras consideraciones importantes</h3>
+                    <p>
+                        La configuración de MySQL no es un proceso único, sino continuo. A medida que crece la base de datos o la demanda de tráfico, es necesario revisar y ajustar la configuración para garantizar un rendimiento óptimo. También es recomendable monitorear el uso de recursos del servidor, como CPU y memoria, para prevenir sobrecargas y caídas del sistema.
+                    </p>
+                </article>
+
+                <section class="media">
+                    <div class="image-container">
+                        <h3>Configuración de MySQL:</h3>
+                        <!-- Usa la ruta de tu propia imagen en lugar de la de placeholder -->
+                        <img src="t2.png" alt="Configuración MySQL" width="400" height="400">
+                    </div>
+
+                    <div class="video-container">
+                        <h3>Video relacionado:</h3>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/iOFlxa7U9n8?si=PU25kUx8XizvRQtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>© Gonzales Tabera Evelyn - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
